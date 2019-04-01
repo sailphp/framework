@@ -1,0 +1,13 @@
+{
+    "name": "sailphp/framework",
+    "description": "Sail Framework",
+    "type": "project",
+    "require": {
+      "sailphp/core": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+  }
