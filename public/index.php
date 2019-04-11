@@ -17,6 +17,10 @@ $app = new SailPHP\Foundation\App(
         'session'   => new SailPHP\Session\Session(
             new SailPHP\Session\SessionAdapter()
         ),
+        // 'csrf'      => new Symfony\Component\Security\Csrf\CsrfTokenManager(
+        //     null,
+        //     new SailPHP\Session\Security\CsrfTokenManagerAdapter()
+        // ),
         'database'  => new Illuminate\Database\Capsule\Manager()
     )
 );
