@@ -3,7 +3,8 @@
     "description": "Sail Framework",
     "type": "project",
     "require": {
-        "sailphp/core": "^0.1.13"
+        "sailphp/core": "^0.1.15",
+		"ext-json": "*"
     },
     "autoload": {
         "psr-4": {
