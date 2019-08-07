@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }} | SnapChatters</title>
+
+
+<script src="{{ assets }}/js/vendors~main.bundle.js"></script>
+<script src="{{ assets }}/js/main.bundle.js"></script>
+<link rel="stylesheet" href="{{ assets }}/css/main.css" type="text/css" />
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        _snap.url = "{{ url }}";
+        _snap.init();
+    })
+</script>
+</head>
+<body>
+    {% include 'partials/header.twig' %}
+    {% block content %}{% endblock %}
+
+    {% include 'partials/footer.twig' %}
+</body>
+</html>

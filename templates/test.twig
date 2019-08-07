@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+{{ sailTest }}<br /><br />
+{{ middlewaretest }}<br />
+<a href="{{ url('profile', {'name': 'brad'}) }}">View Profile</a>
+<br />
+
+<h1>Page {{ users.currentPage() }}</h1>
+{% for user in users %}
+    {{ user.name }}<br />
+{% endfor %}
+
+{{ links(users) }}

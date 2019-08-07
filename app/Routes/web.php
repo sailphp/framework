@@ -10,6 +10,8 @@ use SailPHP\Http\Route;
 
 Route::get('/', 'home', 'HomeController@home');
 
+Route::get('/email', 'email', 'HomeController@email');
+
 Route::group(['prefix'  => 'profile'], function() {
     Route::get('{name}', 'profile', 'HomeController@test');
 });

@@ -1,14 +1,23 @@
 {
-    "name": "sailphp/framework",
-    "description": "Sail Framework",
-    "type": "project",
-    "require": {
-        "sailphp/core": "^0.1.15",
-		"ext-json": "*"
+  "name": "sailphp/framework",
+  "description": "Sail Framework",
+  "type": "project",
+  "require": {
+    "sailphp/core": "^0.1.26",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-zlib": "*",
+    "symfony/var-dumper": "^4.3"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
     },
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/"
-        }
-    }
+    "files": [
+      "app/helpers.php"
+    ]
   }
+}
